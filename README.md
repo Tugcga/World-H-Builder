@@ -1,4 +1,4 @@
-# WIP notes
+# WIP Notes
 
 This project is in a very early WIP stage.
 
