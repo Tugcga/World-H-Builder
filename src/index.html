@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Game Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <button class="header_button" id="header_modeller">Modeller</button>
+        <button class="header_button" id="header_world">World</button>
+    </div>
+
+    <div id="modeller" class="workspace">
+        <div class="panel left" id="pannel_left">
+        </div>
+
+        <div id="canvas_zone">
+            <canvas id="background_canvas" class="canvas_layer"></canvas>
+            <canvas id="front_canvas" class="canvas_layer"></canvas>
+            <canvas id="picks_canvas" class="canvas_layer"></canvas>
+            <div id="tool_panel">
+                <button class="tool_button", id="select_tool" title="Select (Space)">
+                    <span class="icon" style="background-image: url('assets/tool_select.png');"></span>
+                </button>
+                <button class="tool_button", id="draw_tool" title="Draw walls (D)">
+                    <span class="icon" style="background-image: url('assets/tool_walls.png');"></span>
+                </button>
+                <button class="tool_button", id="camera_tool" title="Camera control (S)">
+                    <span class="icon" style="background-image: url('assets/tool_camera.png');"></span>
+                </button>
+                <button class="tool_button", id="point_tool" title="Add point tool (P)">
+                    <span class="icon" style="background-image: url('assets/tool_point.png');"></span>
+                </button>
+                <button class="tool_button", id="zone_tool" title="Add zone tool (Z)">
+                    <span class="icon" style="background-image: url('assets/tool_zone.png');"></span>
+                </button>
+                <button class="tool_button", id="connection_tool" title="Draw room connections (C)">
+                    <span class="icon" style="background-image: url('assets/tool_connect.png');"></span>
+                </button>
+                <button class="tool_button", id="door_tool" title="Add door tool (V)">
+                    <span class="icon" style="background-image: url('assets/tool_door.png');"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="panel right" id="pannel_right">
+        </div>
+    </div>
+
+    <div id="world_nodes" class="workspace">
+
+    </div>
+
+    <div class="footer">
+        
+    </div>
+    <script type="module" src="./index.ts"></script>
+    
+</body>
+
+</html>
